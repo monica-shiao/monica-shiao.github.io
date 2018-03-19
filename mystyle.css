@@ -1,0 +1,90 @@
+
+body {
+  background-image:url(./pic/background.jpg);
+}
+
+h1{
+  font-family: Chalkduster, fantasy;
+  font-size:300%;
+  text-align:center;
+  color: #990000;
+  margin-top:60px;
+}
+
+h2{
+  font-family: Luminari, fantasy ;
+  font-size:280%;
+  text-align:center;
+  color: #082567;
+  margin-top:50px;
+}
+
+h3{
+  font-family: Jazz LET, fantasy;
+  font-size:250%;
+  text-align:center;
+  color: #004D99;
+  margin-bottom:10px;
+}
+
+
+.board  {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+.boardImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100;
+    margin: auto;
+    height:600px;
+    width:845px;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.boardP{
+    padding-top: 280px;
+    padding-right: 450px;
+    padding-bottom: 0px;
+    padding-left: 450px;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    color:#696969;
+}
+
+.chinese_p {
+  font-size: 30px;
+  font-family: Microsoft JhengHei;
+  text-align: center;
+  color:#696969;
+}
+
+.english_p{
+  font-size: 20px;
+  font-family: Monospace;
+  text-align:  center
+}
+
+.pic1{
+  position: relative;
+  padding: 20px;
+  display:block;
+  margin: auto;
+  height:80%;
+  width:80%;
+}
+
+.pic2{
+  position: relative;
+  display:block;
+  margin: auto;
+  height:40%;
+  width:40%;
+}
+
+
