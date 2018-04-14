@@ -5,16 +5,27 @@
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
+
+<script>
+  $(document).ready(function() {
+    $("#introduciton").addClass("animated bounce");
+  });
+</script>
+
 <body>
 
 	<h1>Monica's Website</h1>
 	<div class='board'>
 		<img class="boardImg " src="./love.gif"/> 
-		<p class= "boardP animated  bounce">大家好！ 我是蕭又寧～</p>
-		<p class= "chinese_p animated bounce">歡迎來到我的網站^^Ｙ<br\></p>
-		<p class= "chinese_p animated bounce">以下是最近去了一次美國西雅圖</p>
-		<p class= "chinese_p animated bounce"> 遊歷的一些地方與美景，分享給大家！</p>
+		<div id = 'introduciton'>
+			<p class= "boardP">大家好！ 我是蕭又寧～</p>
+			<p class= "chinese_p">歡迎來到我的網站^^Ｙ<br\></p>
+			<p class= "chinese_p">以下是最近去了一次美國西雅圖</p>
+			<p class= "chinese_p"> 遊歷的一些地方與美景，分享給大家！</p>
+		</div>
 	</div>
 
 	<h2>Downtown Seattle</h2>
@@ -29,28 +40,115 @@
 	<img class="pic1" src="./pic/downtown/art001.jpg"/> 
 
 	<h3>Amazon's glass Spheres</h3>
-	<img class="pic1" src="./pic/downtown/amazon/001.jpg"/> 
-	<img class="pic2" style="float:left; padding-left: 9%"src="./pic/downtown/amazon/002.jpg"/>
-	<img class="pic2" style="float:right; padding-right: 9%"  src="./pic/downtown/amazon/003.jpg"/>
+	<div class="slideshow-container">
+	  <div class="mySlides1">
+	    <img src="./pic/downtown/amazon/005.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides1">
+	    <img src="./pic/downtown/amazon/001.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides1 pic2">
+	    <img src="./pic/downtown/amazon/002.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides1 pic2">
+	    <img src="./pic/downtown/amazon/003.jpg" style="width:100%">
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+
 
 	<h3>Amazon's go (Amazon 無人商店)</h3>
 	<img class="pic2" style="height:60%; width:60%;" src="./pic/downtown/amazon/004.jpg"/>
 
+
 	<h2>Mount Rainier National Park （瑞尼爾山國家公園）</h2>
-	<img class="pic1" src="./pic/Rainier/001.jpg"/>
-	<img class="pic1" src="./pic/Rainier/002.jpg"/>
-	<img class="pic1" src="./pic/Rainier/003.jpg"/>
+
+	<div class="slideshow-container">
+	  <div class="mySlides2">
+	    <img src="./pic/Rainier/001.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+	    <img src="./pic/Rainier/002.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+	    <img src="./pic/Rainier/003.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+	    <img src="./pic/Rainier/004.JPG" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+	    <img class = "pic2" style="height:50%; width:50%;" src="./pic/Rainier/005.JPG" >
+	  </div>
+
+	  <div class="mySlides2">
+	    <img class = "pic2" src="./pic/Rainier/006.JPG"">
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+	</div>
+
 
 	<h2>University of Washington</h2>
-	<img class="pic1" src="./pic/UW/001.jpg"/>
-	<img class="pic1" src="./pic/UW/002.jpg"/>
-	<img class="pic1" src="./pic/UW/004.jpg"/>
+
+	<div class="slideshow-container">
+	  <div class="mySlides3">
+	    <img src="./pic/UW/001.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides3">
+	    <img src="./pic/UW/004.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides3">
+	    <img src="./pic/UW/002.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides3 pic2">
+	    <img src="./pic/UW/003.jpg" style="width:100%">
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+	</div>
+
 
 	<h2>Gas Works Park</h2>
-	<img class="pic1" src="./pic/GasPark/gas001.jpg"/>
-	<img class="pic1" src="./pic/GasPark/002.jpg"/>
+	<img class = "pic2" style="height:40%; width:40%;" src="./pic/GasPark/002.jpg"/>
 
 	<h3 class="animated infinite jello">～～謝謝閱覽ＯwＯ～～</h3>
+
+<script>
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
 
 </body>
 </html>
